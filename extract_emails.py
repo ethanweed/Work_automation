@@ -17,6 +17,7 @@ output = ", ".join(match)
 #output data to the clipboard
 import subprocess
 
+# can't remember where this came from - probably stackoverflow
 def setClipboardData(data):
 	p = subprocess.Popen(['pbcopy'], stdin=subprocess.PIPE)
 	p.stdin.write(data)
