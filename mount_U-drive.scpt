@@ -1,3 +1,3 @@
 tell application "System Events"
-    mount volume "smb://uni.au.dk/users/au147374"
+    mount volume "smb://uni.au.dk/users/AU-ID"
 end tell
