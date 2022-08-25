@@ -5,12 +5,15 @@
 # This file can be viewed in e.g. Marked2 (https://marked2app.com) or Obsidian (http://obsidian.md/) and (thanks to Highlights) contains hyperlinks back to the original pdfs.
 
 import os
-path = 'PATH/TO/MARKDOWN/FILES'
-files = [file for file in os.listdir(pathin) if file.endswith('.md')]
+path = '/Users/ethan/Desktop/Alignment in ASD/'
+files = [file for file in os.listdir(path) if file.endswith('.md')]
+if '_highlights.md' in files:
+	os.remove ('_highlights.md') 
+files = [file for file in os.listdir(path) if file.endswith('.md')]
 for file in files:
     f = open(file)
     text = f.read()
-    highlights = open(path + 'highlights.md', 'a')
+    highlights = open(path + '_highlights.md', 'a')
     highlights.write(text)
     highlights.write('----- \n') 
     highlights.write('\n') 
