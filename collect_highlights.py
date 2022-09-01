@@ -5,7 +5,7 @@
 # This file can be viewed in e.g. Marked2 (https://marked2app.com) or Obsidian (http://obsidian.md/) and (thanks to Highlights) contains hyperlinks back to the original pdfs.
 
 import os
-path = '/Users/ethan/Desktop/Alignment in ASD/'
+path = '/path/to/my/pdfs/'
 files = [file for file in os.listdir(path) if file.endswith('.md')]
 if '_highlights.md' in files:
 	os.remove ('_highlights.md') 
